@@ -1,6 +1,6 @@
 //! Example from サンプルYUY2色変換プラグイン(色変換プラグイン) for AviUtl ver0.99h or later by ＫＥＮくん.
 
-use aviutl_plugin::{color::prelude::*, AviUtlError, PixelFormat, PixelYc};
+use aviutl_plugin::{color::prelude::*, PixelFormat, PixelYc};
 
 #[derive(Debug, Default)]
 struct Yuy2Plugin;

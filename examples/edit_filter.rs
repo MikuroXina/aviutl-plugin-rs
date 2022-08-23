@@ -1,10 +1,6 @@
 //! Example from サンプル編集プラグイン(フィルタプラグイン) for AviUtl ver0.99i or later by ＫＥＮくん.
 
-use aviutl_plugin::{
-    filter::{prelude::*, EditFlag},
-    AviUtlError,
-};
-use aviutl_plugin_sys::filter::FileInfoFlag;
+use aviutl_plugin::filter::{file_info::FileInfoFlag, prelude::*, EditFlag};
 use std::{ffi::CString, mem::MaybeUninit};
 use windows::{
     core::PCSTR,

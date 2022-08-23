@@ -106,7 +106,7 @@ impl<'a> Info<'a> {
 
 pub mod prelude {
     pub use super::{Info, OutputPlugin};
-    pub use crate::{export_output_plugin, FileFilters, Result};
+    pub use crate::{export_output_plugin, AviUtlError, FileFilters, Result};
 }
 
 pub trait OutputPlugin: Default {

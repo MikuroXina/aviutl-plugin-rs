@@ -51,7 +51,7 @@ pub trait InputHandle: Sized {
 
 pub mod prelude {
     pub use super::{InputHandle, InputPlugin, PluginFlag};
-    pub use crate::{export_input_plugin, FileFilters, Result};
+    pub use crate::{export_input_plugin, AviUtlError, FileFilters, Result};
 }
 
 /// Input plugin (`.aui`) handlers.

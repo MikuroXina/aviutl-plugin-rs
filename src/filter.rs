@@ -278,7 +278,7 @@ pub mod prelude {
         api::Api, editing::Editing, window_message::WindowMessage, Control, FilterPlugin,
         FilterPluginFlag, FrameInfo, ProcInfo, Track, UpdateStatus,
     };
-    pub use crate::{export_filter_plugin, Result, Size};
+    pub use crate::{export_filter_plugin, AviUtlError, Result, Size};
 }
 
 pub trait FilterPlugin: Default {

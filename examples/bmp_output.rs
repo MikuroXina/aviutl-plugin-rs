@@ -1,6 +1,6 @@
 //! Example from サンプルBMP出力プラグイン (出力プラグイン) for AviUtl ver0.98 or later by ＫＥＮくん.
 
-use aviutl_plugin::{output::prelude::*, AviUtlError, PixelFormat};
+use aviutl_plugin::{output::prelude::*, PixelFormat};
 use std::{
     mem::size_of,
     path::PathBuf,
