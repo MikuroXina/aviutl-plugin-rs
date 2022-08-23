@@ -1,0 +1,67 @@
+[package]
+name = "aviutl-plugin"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aviutl-plugin-sys = { path = "./aviutl-plugin-sys" }
+derive_more = "0.99.17"
+encoding_rs = "0.8.31"
+once_cell = "1.13.1"
+thiserror = "1.0.32"
+windows = { version = "0.39.0", features = [
+    "Win32",
+    "Win32_Foundation",
+    "Win32_Graphics",
+    "Win32_Graphics_Gdi",
+    "Win32_Media",
+    "Win32_Media_Audio",
+    "Win32_UI",
+    "Win32_UI_Controls",
+    "Win32_UI_WindowsAndMessaging",
+] }
+
+[workspace]
+members = ["aviutl-plugin-sys"]
+
+[[example]]
+name = "audio_filter"
+crate-type = ["dylib"]
+
+[[example]]
+name = "avi_input"
+crate-type = ["dylib"]
+
+[[example]]
+name = "bmp_output"
+crate-type = ["dylib"]
+
+[[example]]
+name = "disp_filter"
+crate-type = ["dylib"]
+
+[[example]]
+name = "edit_filter"
+crate-type = ["dylib"]
+
+[[example]]
+name = "interlace_filter"
+crate-type = ["dylib"]
+
+[[example]]
+name = "loupe_filter"
+crate-type = ["dylib"]
+
+[[example]]
+name = "multi_thread_filter"
+crate-type = ["dylib"]
+
+[[example]]
+name = "video_filter"
+crate-type = ["dylib"]
+
+[[example]]
+name = "yuy2_color"
+crate-type = ["dylib"]

@@ -1,0 +1,20 @@
+[package]
+name = "aviutl-plugin-sys"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bitflags = "1.3.2"
+derive_more = "0.99.17"
+windows-sys = { version = "0.36.1", features = [
+    "Win32",
+    "Win32_Foundation",
+    "Win32_Graphics",
+    "Win32_Graphics_Gdi",
+    "Win32_Media",
+    "Win32_Media_Audio",
+    "Win32_UI",
+    "Win32_UI_WindowsAndMessaging",
+] }
