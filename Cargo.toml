@@ -36,10 +36,6 @@ name = "audio_filter"
 crate-type = ["dylib"]
 
 [[example]]
-name = "avi_input"
-crate-type = ["dylib"]
-
-[[example]]
 name = "bmp_output"
 crate-type = ["dylib"]
 
