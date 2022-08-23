@@ -60,7 +60,7 @@ impl<'a> ProcInfo<'a> {
 
 pub mod prelude {
     pub use super::{ColorPlugin, ProcInfo};
-    pub use crate::{export_color_plugin, PixelYc, Result};
+    pub use crate::{export_color_plugin, AviUtlError, PixelYc, Result};
 }
 
 pub trait ColorPlugin: Default {
@@ -78,7 +78,7 @@ pub trait ColorPlugin: Default {
         _from: &[u8],
         _to: &mut [PixelYc],
     ) -> Result<()> {
-        Ok(())
+        Err(AviUtlError::NoImpl)
     }
     fn yc_to_pixel(
         &mut self,
@@ -86,7 +86,7 @@ pub trait ColorPlugin: Default {
         _from: &[PixelYc],
         _to: &mut [u8],
     ) -> Result<()> {
-        Ok(())
+        Err(AviUtlError::NoImpl)
     }
 }
 

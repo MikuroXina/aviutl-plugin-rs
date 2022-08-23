@@ -40,6 +40,8 @@ pub enum AviUtlError {
     ConfigFailure(String),
     #[error("frame {0} is out of range")]
     FrameIndexOutOfRange(usize),
+    #[error("no implementation provided")]
+    NoImpl,
 }
 
 /// Result type of an AviUtl plugin.
