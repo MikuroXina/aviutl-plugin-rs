@@ -2,6 +2,11 @@
 name = "aviutl-plugin"
 version = "0.1.0"
 edition = "2021"
+description = "The AviUtl plugin framework with Rust."
+repository = "https://github.com/MikuroXina/aviutl-plugin-rs"
+license = "Apache-2.0"
+keywords = ["aviutl", "plugin", "filter"]
+categories = ["multimedia"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

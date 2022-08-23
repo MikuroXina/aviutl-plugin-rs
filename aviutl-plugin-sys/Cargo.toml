@@ -2,6 +2,10 @@
 name = "aviutl-plugin-sys"
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/MikuroXina/aviutl-plugin-rs"
+license = "Apache-2.0"
+keywords = ["aviutl", "plugin", "filter"]
+categories = ["external-ffi-bindings", "multimedia"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
